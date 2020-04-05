@@ -28,7 +28,7 @@ namespace PeakCan
     public class PCanDevice : ICanInterface
     {
         ushort Channel;
-        public PCanDevice(ushort channel)
+        public PCanDevice(ushort channel = PCANBasic.PCAN_USBBUS1)
         {
             Channel = channel;
         }
